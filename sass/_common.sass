@@ -104,17 +104,17 @@ input
 			font-size: 0
 // footer
 .footer
-	padding: 0 15px 0 20px 
-	height: 59px
 	width: 100%
 	color: #A4A4A4
-	font-weight: 300  
-	line-height: 59px
-	vertical-align: middle
+	font-weight: 300
+	line-height: 1
 	z-index: 200
+	vertical-align: middle
 	background-color: #1d1d1d 
 	background: rgba(#1d1d1d, .8) 
 	+box
+	.wrapper
+		padding: 10px 15px 21px 20px 
 
 .footer__nav
 	float: left
@@ -139,5 +139,34 @@ input
 			font-weight: 300 
 			&:hover
 				text-decoration: underline
+				
 .footer__copy
 	float: right
+
+// .footer__bot
+.footer__bot
+	border-top: 1px solid #434343 
+	background: #1D1D1D 
+	font-family: 'Roboto Condensed', 'sans-serif'
+	display: block
+	
+.footer__logo
+	margin-left: 14px
+	display: inline-block
+	+s(f-logo)
+
+.footer__menu
+	margin: 18px 0 0 80px
+	display: inline-block
+	vertical-align: top
+	li
+		margin-right: 30px
+		display: inline-block
+		a
+			font-size: 14px
+			font-weight: 400
+			color: #FFF 
+			text-transform: uppercase
+			text-decoration: none
+			&:hover
+				text-decoration: underline
