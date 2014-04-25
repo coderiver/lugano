@@ -90,8 +90,8 @@ input:focus::placeholder { font-size: 0; }
 
 .header__logo { width: 278px; }
 .header__logo a { padding: 0; }
+.header__logo .btn:active { top: auto; }
 .header__logo .btn_top { position: absolute; bottom: -89px; left: 50%; width: 50px; height: 20px; margin-left: -25px; }
-.header__logo .btn_top:active { top: auto; }
 .header__logo .btn_bot { position: absolute; bottom: -213px; left: 50%; width: 50px; height: 20px; margin-left: -25px; display: none; }
 .header__logo .header__logo_1 { position: absolute; left: 0; top: 0; bottom: -70px; width: 278px; height: 128px; overflow: hidden; z-index: 2; background: url("../img/logo.png") no-repeat 50% 0; -webkit-box-shadow: 0 1px 12px black; -moz-box-shadow: 0 1px 12px black; box-shadow: 0 1px 12px black; }
 .header__logo .header__logo_1:hover { background: url("../img/logo.png") no-repeat 50% 0; }
