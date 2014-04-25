@@ -15,7 +15,7 @@
 <div class="site-wrap">
 	
 	<!-- BEGIN .header -->
-	<header class="header">
+	<div class="header">
 		<div class="wrapper">
 			<ul class="header__nav">
 				<li class="is-active">
@@ -61,14 +61,15 @@
 				<li class="header__phone">+7 495<span> 532-11-11</span></li>
 			</ul>
 		</div>
-	</header>
+	</div>
 	<!-- END .header -->
  
 	<!-- BEGIN .wrapper -->
 	<div class="wrapper wrapper_abs">
+
 		<!-- BEGIN .signup -->
 		<div class="signup">
-			<div class="signup__top"><i></i>Записаться на просмотр</div>
+			<div class="signup__top js-form-trigger"><i></i>Записаться на просмотр</div>
 			<div class="form">
 				<div class="form__row">
 					<input type="text" placeholder="Ваше имя">
@@ -87,6 +88,47 @@
 			</div>
 		</div>
 		<!-- END .signup -->
+
+		<!-- BEGIN .callback -->
+		<div class="callback">
+			<div class="callback__top js-form-trigger"><i></i>Обратный звонок</div>
+			<div class="form">
+				<div class="form__row">
+					<input type="text" placeholder="Номер телефона">
+				</div>
+				<button class="btn">Заказать звонок!</button>
+			</div>
+		</div>
+		<!-- END .callback -->
+
+		<!-- BEGIN .technology -->
+		<div class="technology">
+			<h3 class="technology__title">Современные технологии</h3>
+			<h3 class="technology__title technology__title_bot">и инновации в строительстве</h3>
+			<p>Все материалы, которые используются в отделке фасадов не только экологичны, но и отвечают последним технологиям строительства. Лугано - самый экологичный и инновативный поселок в мире.</p>
+			<i></i>
+		</div>
+		<!-- END .technology -->
+
+		<!-- BEGIN .menu -->
+		<ul class="menu">
+			<li>
+				<a href="#">Технологии</a>
+				<ul class="menu__list">
+					<li class="menu__item menu__item1"><a href="#"><i></i></a></li>
+					<li class="menu__item menu__item2"><a href="#"><i></i></a></li>
+					<li class="menu__item menu__item3"><a href="#"><i></i></a></li>
+					<li class="menu__item menu__item4"><a href="#"><i></i></a></li>
+					<li class="menu__item menu__item5"><a href="#"><i></i></a></li>
+					<li class="menu__item menu__item6"><a href="#"><i></i></a></li>
+				</ul>
+			</li>
+			<li><a href="#">Планировки</a></li>
+			<li><a href="#">Отделочные материалы</a></li>
+			<li><a href="#">Коммуникации</a></li>
+		</ul>
+		<!-- END .menu -->
+
 	</div>
 	<!-- END .wrapper -->
 
@@ -151,10 +193,10 @@
 	<!-- END .cycle -->
 
 	<!-- BEGIN .footer -->
-	<div class="footer">
+	<div class="footer js-bg">
 		<div class="wrapper">
 			<ul class="footer__nav">
-				<li>Девелопер <i>&raquo;</i></li>
+				<li class="footer__dev js-dev">Девелопер <i>&raquo;</i></li>
 				<li>
 					<a href="#">Кредитные программы</a>
 				</li>
@@ -167,6 +209,22 @@
 			</ul>
 			<div class="footer__copy">&copy; 2014 &copy; Landom</div>
 		</div>
+		
+		<!-- BEGIN .footer__bot -->
+		<div class="footer__bot js-footer">
+			<div class="wrapper">
+				<a href="#" class="footer__logo"></a>
+				<ul class="footer__menu">
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">услуги</a></li>
+					<li><a href="#">пресс центр</a></li>
+					<li><a href="#">все проекты компании</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- END .footer__bot -->
+
 	</div>
 	<!-- END .footer -->
 
