@@ -150,3 +150,7 @@ input:focus::placeholder { font-size: 0; }
 .data__text { padding: 0 5px 0 10px; width: 80px; display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 .data__col { line-height: 34px; border: 1px solid #c4c4c4; background: rgba(0, 0, 0, 0.6); -webkit-border-radius: 1px; -moz-border-radius: 1px; -ms-border-radius: 1px; -o-border-radius: 1px; border-radius: 1px; }
+
+.out { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -59px; }
+
+.push { height: 59px; }
