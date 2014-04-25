@@ -42,8 +42,11 @@ body
 // btn
 .btn
 	position: relative
+	color: #FFF 
 	cursor: pointer
 	background: #AD2A1E 
+	&:active
+		margin-top: -1px
 .btn_top
 	&:before
 		position: absolute
@@ -66,6 +69,15 @@ body
 .form
 	padding: 11px 12px 
 	// display: none
+	.btn
+		width: 100%
+		font-weight: 700
+		text-align: center
+		text-transform: uppercase
+		line-height: 36px
+		font-family: 'Roboto Condensed', 'sans-serif'
+		&:active
+			margin-bottom: 1px
 .form__row
 	margin-bottom: 10px
 
