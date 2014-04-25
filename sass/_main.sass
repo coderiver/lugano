@@ -1,2 +1,250 @@
-// Normally mainpage styles
- 
+// nav
+.header__nav
+	font-family: 'Roboto Condensed', 'sans-serif'
+	text-align: center
+	font-size: 0
+	li
+		position: relative
+		height: 59px
+		color: #FFF 
+		font-size: 14px
+		vertical-align: top
+		display: inline-block
+		+box
+		&.is-active
+			a
+				background: url('../img/ac-bg.png') 
+		a
+			padding: 0 16px 0
+			height: 100%
+			color: #FFF 
+			font-size: 14px
+			text-transform: uppercase
+			text-decoration: none
+			font-weight: 400 
+			line-height: 59px
+			vertical-align: middle
+			display: inline-block
+			+box
+			&:hover
+				background: url('../img/ac-bg.png') 
+
+.header__logo
+	width: 278px
+	a
+		padding: 0
+	.btn_top
+		position: absolute
+		bottom: -89px
+		left: 50%
+		width: 50px
+		height: 20px
+		margin-left: -25px
+	.btn_bot
+		position: absolute
+		bottom: -213px
+		left: 50%
+		width: 50px
+		height: 20px
+		margin-left: -25px
+		display: none
+	.header__logo_1
+		position: absolute
+		left: 0
+		top: 0
+		bottom: -70px
+		width: 278px
+		height: 128px
+		overflow: hidden
+		z-index: 2
+		background: url("../img/logo.png") no-repeat 50% 0
+		+box-shadow(0 1px 12px #000)
+		&:hover
+			background: url("../img/logo.png") no-repeat 50% 0
+	.header__shop
+		position: absolute
+		z-index: 200
+		top: 128px
+		left: 0
+		height: 124px
+		width: 278px
+		display: inline-block
+		display: none
+		background: url("../img/logo2.png") no-repeat 0 0
+		+box
+.header__phone
+	padding-left: 16px
+	line-height: 59px
+	vertical-align: text-bottom
+	span
+		font-size: 24px
+		font-weight: 300 
+		line-height: 39px
+
+// cycle
+.cycle
+	position: relative
+	min-width: 1200px
+	font-family: 'Roboto Condensed', 'sans-serif'
+	
+.cycle__item
+	width: 100%
+	min-height: 100%
+	img
+		width: 100%
+		
+.cycle__nav
+	position: absolute
+	top: 50%
+	margin-top: -54px
+	z-index: 200
+	+s(next)
+
+.cycle__nav_prev
+	left: 28px
+	+rotate(180)
+
+.cycle__nav_next
+	right: 28px
+	
+.cycle__index
+	position: absolute
+	min-width: 145px
+	background-color: #000
+	background: rgba(#000, .6)
+	+clr
+	&:before
+		position: absolute
+		content: ''
+		top: -3px
+		left: -3px
+		width: 132px
+		height: 3px
+		background: #ad2a1e
+	&:after
+		position: absolute
+		content: ''
+		top: 0px
+		left: -3px
+		height: 45.5px
+		width: 3px
+		background: #ad2a1e
+	a
+		padding: 13px 30px 13px 18px
+		font-size: 14px
+		text-transform: uppercase
+		font-weight: 700 
+		color: #fff
+		text-decoration: none
+		display: inline-block
+	.cycle__marc
+		position: absolute
+		right: -34px
+		bottom: -30px
+		width: 49px
+		height: 49px
+		z-index: 200
+		cursor: pointer
+		background: #AD2A1E 
+		&:before
+			position: absolute
+			content: ""
+			top: 50%
+			left: 50%
+			margin: -10.5px 0 0 -10.5px  
+			+s(c-marc)
+		i
+			position: absolute
+			top: 50%
+			left: 50%
+			margin: -1.5px 0 0 -10.5px
+			z-index: 200
+			display: none
+			+s(c-marc2)
+		&:hover
+			z-index: 201
+			&:before
+				display: none
+			i
+				display: block
+			+ .cycle__cont
+				display: block
+
+.header__shop
+	position: relative
+	line-height: 124px
+	.cycle__item
+		height: 124px
+		overflow: hidden
+		+box
+		img
+			vertical-align: middle
+.cycle__but
+	position: absolute
+	z-index: 300
+	top: 50%
+	margin-top: -14px
+	+s(l-nex)
+.cycle__but_pre
+	left: 13px
+	+rotate(180)
+.cycle__but_nex
+	right: 13px
+.cycle__index1
+	top: 32%
+	left: 15%
+
+.cycle__index2
+	top: 33%
+	left: 43%
+	
+.cycle__index3
+	top: 33%
+	left: 70%
+	
+.cycle__index4
+	top: 48%
+	left: 27%
+	
+.cycle__index5
+	top: 48%
+	left: 52%
+
+.cycle__cont
+	position: absolute
+	padding-bottom: 54px
+	left: 0
+	bottom: -30px
+	right: -34px
+	color: #FFF 
+	z-index: 200
+	background-color: #000
+	background: rgba(#000, .8)
+	display: none
+	&:hover
+		display: block
+	&:before
+		position: absolute
+		content: ''
+		top: -3px
+		left: -3px
+		width: 132px
+		height: 3px
+		background: #ad2a1e
+	&:after
+		position: absolute
+		content: ''
+		top: 0px
+		left: -3px
+		bottom: 30px
+		width: 3px
+		background: #ad2a1e
+	p
+		padding: 10px 12px 0 18px
+	
+.cycle__title
+	padding: 13px 30px 13px 18px
+	font-size: 14px
+	text-transform: uppercase
+	font-weight: 700 
+	background: #000 

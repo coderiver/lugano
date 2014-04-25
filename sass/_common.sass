@@ -1,49 +1,93 @@
-// # SHORT HOWTO
-// ## Sprites
-//     .whatever
-//          +sized-sprite($icons, coderiver) //or
-// 			+s(codedby) //gets default value for spritemap as $icons
-// ### animation example
-//     +include keyframes(rotate)
-//        from
-//           +rotate(0)
-//        to
-//           +rotate(360)
-// ## animation usage
-//     body:hover
-// 	    +animation(rotate 200s linear infinite)
-// ## animations easing, see easings.net for full list and examples, tnx @ai
-//     transition: all 1.2s ceaser($ease-in)
-// ## gradient example
-//     +background-image(linear-gradient(#232323, #5c5c5c));
-//     +g(#232323, #5c5c5c);
-//	   horizontal
-//     +gh(#232323, #5c5c5c);
-// ## making bw-images
-//     img
-//			@extend %gray
-// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     +min-screen(320)
-//			display: none
-// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
-//
-// ## use cycles
-//     @for $i from 1 through 3
-//       .item-#{$i}
-//			width: 2em * $i;
-//     @each $s in a,b,c
-// 	    	#{$s}
-//				display: none
-// ## fonts 
-// Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
-// =book
-// 	font-family: "book",arial,sans-serif 
-	
 body
+	position: relative
 	font-size: 12px 
-	font-family: Arial, sans-serif 
+	font-family: 'Roboto', 'sans-serif'
+	// font-family: 'Roboto Condensed', 'sans-serif'
 	line-height: 1.4
+	+clr
 
 
 // common blocks      
+
+//wrapper
+.wrapper
+	margin: 0 auto
+	width: 1200px
+
+//header
+.header
+	position: fixed
+	top: 0
+	left: 0
+	height: 59px
+	width: 100%
+	z-index: 400
+	background-color: #1d1d1d
+	background: rgba(#1d1d1d, 0.8) 
+	
+// btn
+.btn
+	position: relative
+	cursor: pointer
+	background: #AD2A1E 
+.btn_top
+	&:before
+		position: absolute
+		content: ""
+		top: 50%
+		left: 50%
+		margin: -5px 0 0 -8px
+		+s(arr1)
+.btn_bot
+	background: #1D1D1D 
+	&:before
+		position: absolute
+		content: ""
+		top: 50%
+		left: 50%
+		margin: -5px 0 0 -8px
+		+rotate(180)
+		+s(arr1)
+
+// footer
+.footer
+	position: absolute
+	left: 0
+	bottom: 0
+	padding: 0 15px 0 20px 
+	height: 59px
+	width: 100%
+	color: #A4A4A4
+	font-weight: 300  
+	line-height: 59px
+	vertical-align: middle
+	z-index: 200
+	background-color: #1d1d1d 
+	background: rgba(#1d1d1d, .8) 
+	+box
+
+.footer__nav
+	float: left
+	li
+		padding: 0 11px 
+		display: inline-block
+		&:first-child
+			margin-right: 75px
+			padding-right: 22px
+			cursor: pointer
+			i
+				margin-left: 10px
+				font-size: 16px
+				line-height: 0
+				font-style: normal
+				vertical-align: middle
+				display: inline-block
+				+rotate(-90)
+		a
+			color: #A4A4A4
+			text-decoration: none
+			font-weight: 300 
+			&:hover
+				text-decoration: underline
+.footer__copy
+	float: right
