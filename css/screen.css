@@ -209,7 +209,7 @@ input:focus::placeholder { font-size: 0; }
 .house .house__nav li.is-active a { background: #b02d1b; }
 
 .info .info__title { padding: 8px 23px 4px; font-size: 24px; color: white; text-transform: uppercase; background: #b02d1b; font-family: "Roboto Condensed", sans-serif; }
-.info .info__content { padding: 20px 24px 19px; border-bottom: 1px dashed #4b4b4b; }
+.info .info__content { position: relative; padding: 20px 24px 19px; border-bottom: 1px dashed #4b4b4b; }
 .info .info__content .btn { width: 100%; }
 .info .info__content p { margin-bottom: 5px; font-family: "Roboto", sans-serif; font-size: 13px; }
 
