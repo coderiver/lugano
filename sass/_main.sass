@@ -94,9 +94,14 @@
 	
 .cycle__item
 	width: 100%
-	min-height: 100%
+	height: 100%
+	min-height: 835px
+	background: url('../img/bg-pic.png') no-repeat 0 0
+	background-size: cover
 	img
 		width: 100%
+		height: 100%
+		opacity: 0
 		display: block
 		
 .cycle__nav
@@ -182,10 +187,12 @@
 	position: relative
 	line-height: 124px
 	.cycle__item
-		height: 124px
+		height: 124px !important
+		min-height: 124px
 		overflow: hidden
 		+box
 		img
+			opacity: 1
 			vertical-align: middle
 .cycle__but
 	position: absolute
@@ -199,23 +206,23 @@
 .cycle__but_nex
 	right: 13px
 .cycle__index1
-	top: 32%
+	top: 29%
 	left: 15%
 
 .cycle__index2
-	top: 33%
+	top: 30%
 	left: 43%
 	
 .cycle__index3
-	top: 33%
+	top: 30%
 	left: 70%
 	
 .cycle__index4
-	top: 48%
+	top: 42%
 	left: 27%
 	
 .cycle__index5
-	top: 48%
+	top: 42%
 	left: 52%
 
 .cycle__cont
@@ -274,7 +281,7 @@
 //.signup__top, .callback__top
 .signup__top, .callback__top
 	position: relative
-	padding: 0 10px 0 46px
+	padding: 0 18px 0 46px
 	height: 34px
 	color: #FFF 
 	font-size: 13px
