@@ -57,6 +57,34 @@
 			</li>
 			<li class="header__phone">+7 495<span> 532-11-11</span></li>
 		</ul>
+		<div class="signup">
+			<div class="signup__top js-form-trigger"><i></i>Записаться на просмотр</div>
+			<div class="form" style="display: none;">
+				<div class="form__row">
+					<input type="text" placeholder="Ваше имя">
+				</div>
+				<div class="form__row">
+					<input type="text" placeholder="Номер телефона">
+				</div>
+				<div class="form__row">
+					<div class="data">
+						<div class="data__text">Дата просмотра:</div>
+						<div class="data__col">22.05.214</div>
+						<i class="data__pic"></i>
+					</div>
+				</div>
+				<button class="btn">Записаться!</button>
+			</div>
+		</div>
+		<div class="callback">
+			<div class="callback__top js-form-trigger"><i></i>Обратный звонок</div>
+			<div class="form">
+				<div class="form__row">
+					<input type="text" placeholder="Номер телефона">
+				</div>
+				<button class="btn">Заказать звонок!</button>
+			</div>
+		</div>
 	</div>
 	</header>
 	<!-- END .header -->
@@ -370,23 +398,39 @@
 
 
 <!-- BEGIN .footer -->
-<div class="footer">
-	<div class="wrapper">
-		<ul class="footer__nav">
-			<li>Девелопер <i>&raquo;</i></li>
-			<li>
-				<a href="#">Кредитные программы</a>
-			</li>
-			<li>
-				<a href="#">Ход строительства</a>
-			</li>
-			<li>
-				<a href="#">Инвесторам</a>
-			</li>
-		</ul>
-		<div class="footer__copy">&copy; 2014 &copy; Landom</div>
+<div class="footer js-bg">
+		<div class="wrapper">
+			<ul class="footer__nav">
+				<li class="footer__dev js-dev">Девелопер <i>»</i></li>
+				<li>
+					<a href="#">Кредитные программы</a>
+				</li>
+				<li>
+					<a href="#">Ход строительства</a>
+				</li>
+				<li>
+					<a href="#">Инвесторам</a>
+				</li>
+			</ul>
+			<div class="footer__copy">© 2014 © Landom</div>
+		</div>
+		
+		<!-- BEGIN .footer__bot -->
+		<div class="footer__bot js-footer">
+			<div class="wrapper">
+				<a href="#" class="footer__logo"></a>
+				<ul class="footer__menu">
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">услуги</a></li>
+					<li><a href="#">пресс центр</a></li>
+					<li><a href="#">все проекты компании</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- END .footer__bot -->
+
 	</div>
-</div>
 <!-- END .footer -->
 
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
