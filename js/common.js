@@ -90,4 +90,50 @@ $(document).ready(function() {
     	$(".js-reserve").hide();
     });
 
+    // slider initialize
+    
+    if ($(".gallery__slider").length) {
+    	function gallery(){
+    		var preview = $(".gallery-preview img");
+
+    		$(".js-gallery").hide();
+
+    		$(".js-gallery-close").on('click', function(){
+    			$(".js-gallery").hide();
+    		});
+
+    		$(".gallery__slider").cycle({
+        		fx: "scrollHorz",
+        		next: '.gallery__next',
+        		prev: '.gallery__prev',
+        		timeout: 0
+    		});
+    		
+    		$(".gallery__slider").on( 'cycle-before', function(event, opts){
+				var num = opts.nextSlide;
+				var num = num + 1;
+				$(".gallery-preview img").removeClass('is-active');
+				$(".gallery-preview img:nth-child("+num+")").addClass('is-active');
+    		});
+    		
+    		preview.on('click', function(){
+    			var index = $(this).index();
+
+    			preview.removeClass('is-active');	
+    			$(this).addClass('is-active');
+
+    			$(".gallery__slider").cycle('goto', index);
+
+    			$(".js-gallery").show();
+    		});
+
+
+    		 
+
+
+    	}
+    	gallery();
+    }
+    
+
 });

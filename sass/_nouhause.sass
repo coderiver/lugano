@@ -5,6 +5,7 @@
     height: auto !important
     height: 100%
     margin: 0 auto -31px
+    background: url(../img/pattern-light.jpg) 
 .push
     height: 31px
     
@@ -16,6 +17,7 @@
         height: 702px
         margin-bottom: 22px     
     .house__left
+        position: relative
         float: left
         width: 876px
         border-bottom: 1px dashed #a7a7a7 
@@ -118,7 +120,7 @@
         width: 108px
     .chars__right
         float: left
-.gallery
+.gallery-preview
     +clr
     margin-left: -6px
     margin-bottom: 17px
@@ -128,7 +130,69 @@
         height: 85px
         margin-left: 6px
         margin-bottom: 6px
-        
+        &.is-active
+            +opacity(.61)
+.gallery
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: url(../img/pattern-light.jpg)
+    .gallery__topper
+        position: relative
+        height: 45px
+        padding: 0 10px
+        border-bottom: 1px dashed #a7a7a7
+        .gallery__close
+            position: absolute
+            top: 15px
+            right: 20px
+            +s(close-dark)
+            cursor: pointer
+        .gallery__title
+            height: 45px
+            line-height: 45px
+            font-size: 24px
+            color: #313131
+            text-transform: uppercase   
+    .gallery__container
+        padding: 20px 20px 20px 0
+        .cycle-slideshow
+            position: relative
+        .gallery__prev
+            position: absolute
+            top: 268px
+            left: 1px
+            width: 62px
+            height: 62px
+            background: rgba(#222, .81)
+            z-index: 999
+            cursor: pointer
+            &:before
+                content: ""
+                position: absolute
+                top: 7px
+                left: 15px
+                +s(gallery-prev)
+        .gallery__next
+            position: absolute
+            top: 268px
+            right: 1px
+            width: 62px
+            height: 62px
+            background: rgba(#222, .81)
+            z-index: 999
+            cursor: pointer
+            &:before
+                content: ""
+                position: absolute
+                top: 7px
+                left: 22px
+                +s(gallery-next)               
+        .cycle-slide
+            width: 100%
+            height: 622px 
 .option
     margin-bottom: 25px
     .option__topper    
@@ -200,6 +264,7 @@
                     background: #b02d1b
                     
 .materials
+    margin-bottom: 27px
     li
         +clr
         margin-bottom: 7px
