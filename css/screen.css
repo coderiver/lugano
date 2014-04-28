@@ -247,7 +247,7 @@ input:focus::placeholder { font-size: 0; }
 .tabs .tabs__nav:after { content: " "; display: table; clear: both; }
 .tabs .tabs__nav li { float: left; }
 .tabs .tabs__nav li a { display: block; height: 35px; line-height: 35px; padding: 0 14px; font-size: 16px; color: #313131; text-decoration: none; font-family: "Roboto Condensed", sans-serif; text-transform: uppercase; }
-.tabs .tabs__nav li.is-active a { color: white; background: #b02d1b; }
+.tabs .tabs__nav li.ui-state-active a { color: white; background: #b02d1b; }
 
 .materials li { *zoom: 1; margin-bottom: 7px; }
 .materials li:after { content: " "; display: table; clear: both; }
