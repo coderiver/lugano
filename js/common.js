@@ -80,5 +80,14 @@ $(document).ready(function() {
         tab2();
     };
 
+    // toggle reserve popup
+
+    $(".reserve").hide();
+    $(".js-reserve-btn").on('click', function(){
+    	$(".js-reserve").show();
+    });
+    $(".js-reserve-close").on('click', function(){
+    	$(".js-reserve").hide();
+    });
 
 });
