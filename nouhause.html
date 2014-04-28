@@ -25,30 +25,29 @@
 				<a href="#">Местоположение</a>
 			</li>
 			<li class="header__logo">
-				<a class="header__logo_1" href="#"></a>
-				<div class="header__shop js-logo">
-					<div class="cycle-slideshow" 
-						data-cycle-fx="scrollHorz"
-						data-cycle-timeout="0"
-						data-cycle-pause-on-hover="true"
-						data-cycle-slides=".cycle__item"
-						data-cycle-prev=".cycle__but_pre"
-						data-cycle-next=".cycle__but_nex"
-						data-cycle-pager-template="<button></button>"
-						>
-				    	<div class="cycle__item">
-							<img src="img/logo2.png" alt="img">
+					<a class="header__logo_1" href="#"></a>
+					<div class="header__shop">
+						<div class="cycle-slideshow js-logo" 
+							data-cycle-fx="scrollHorz"
+							data-cycle-timeout="0"
+							data-cycle-pause-on-hover="true"
+							data-cycle-slides=".cycle__item"
+							data-cycle-prev=".cycle__but_pre"
+							data-cycle-next=".cycle__but_nex"
+							data-cycle-pager-template="<button></button>"
+							>
+					    <div class="cycle__item">
+								<img src="img/logo2.png" alt="img">
+							</div>
+					    <div class="cycle__item">
+								<img src="img/logo2.png" alt="img">
+							</div>
+							<button class="cycle__but cycle__but_pre"></button>
+							<button class="cycle__but cycle__but_nex"></button>
 						</div>
-				    	<div class="cycle__item">
-							<img src="img/logo2.png" alt="img">
-						</div>
+						<button class="btn btn_top js-btntop"></button>
 					</div>
-					<button class="cycle__but cycle__but_pre"></button>
-					<button class="cycle__but cycle__but_nex"></button>
-				</div>
-				<button class="btn btn_top js-btntop"></button>
-				<button class="btn btn_bot js-btnbot"></button>
-			</li>
+				</li>
 			<li>
 				<a href="#">Забронировать</a>
 			</li>
@@ -77,7 +76,7 @@
 			</div>
 		</div>
 		<div class="callback">
-			<div class="callback__top js-form-trigger"><i></i>Обратный звонок</div>
+			<div class="callback__top js-form-trigger"><i class="callback__phone"><span></span></i>Обратный звонок</div>
 			<div class="form">
 				<div class="form__row">
 					<input type="text" placeholder="Номер телефона">

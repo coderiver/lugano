@@ -2,16 +2,12 @@ $(document).ready(function() {
 	
 	// btn top
 
-	$('.js-btntop').click(function(){
-        $('.js-btntop').slideUp();
-        $('.js-logo').slideDown();
-        $('.js-btnbot').slideDown();
+    $('.js-btntop').click(function(){
+        $('.js-logo').slideToggle();
+        $('.js-btntop').toggleClass('is-active');
+        return false;
      })
-     $('.js-btnbot').click(function(){
-        $('.js-logo').slideUp();
-        $('.js-btnbot').slideUp();
-        $('.js-btntop').slideDown();
-     })
+
     $('.js-dev').click(function(){
         $('.js-footer').slideToggle();
         $('.js-bg').toggleClass('is-active');
@@ -31,6 +27,12 @@ $(document).ready(function() {
     $(document).on('click', function(){
         form_trigger.next().slideUp();
     })
+
+    function announcer() {
+      $(".js-announcer").slideToggle();
+    }
+    setTimeout(announcer, 3000);
+
 
 	// tabs
     function tab() {

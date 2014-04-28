@@ -38,13 +38,6 @@
 	.btn
 		&:active
 			top: auto
-	.btn_top
-		position: absolute
-		bottom: -89px
-		left: 50%
-		width: 50px
-		height: 20px
-		margin-left: -25px
 	.btn_bot
 		position: absolute
 		bottom: -213px
@@ -60,8 +53,7 @@
 		bottom: -70px
 		width: 278px
 		height: 128px
-		overflow: hidden
-		z-index: 2
+		z-index: 300
 		background: url("../img/logo.png") no-repeat 50% 0
 		+box-shadow(0 1px 12px #000)
 		&:hover
@@ -71,12 +63,26 @@
 		z-index: 200
 		top: 128px
 		left: 0
-		height: 124px
 		width: 278px
 		display: inline-block
-		display: none
-		background: url("../img/logo2.png") no-repeat 0 0
 		+box
+		.cycle-slideshow
+			display: none
+		.btn_top
+			position: absolute
+			bottom: -20px
+			left: 50%
+			width: 50px
+			height: 20px
+			margin-left: -25px
+			&:before
+				+transition(0.5s)
+			&.is-active
+				background: #1D1D1D 
+				&:before
+					margin-top: -6px
+					+rotate(180)
+					+transition(0.5s)
 .header__phone
 	padding-left: 30px
 	line-height: 59px
@@ -174,6 +180,7 @@
 			+s(c-marc2)
 		&:hover
 			z-index: 201
+			+transition(0.2s)
 			&:before
 				display: none
 			i
@@ -227,7 +234,7 @@
 
 .cycle__cont
 	position: absolute
-	padding-bottom: 54px
+	padding: 0 0 54px 0 !important
 	left: 0
 	bottom: -30px
 	right: -34px
@@ -236,8 +243,25 @@
 	background-color: #000
 	background: rgba(#000, .8)
 	visibility: hidden
-	opacity: 0
+	opacity: 1
 	+transition(0.2s)
+	i
+		position: absolute
+		right: 0
+		bottom: 0
+		width: 49px
+		height: 49px
+		z-index: 300
+		cursor: pointer
+		display: block
+		background: #AD2A1E 
+		&:before
+			position: absolute
+			content: "" 
+			top: 50%
+			left: 50%
+			margin: -1.5px 0 0 -10.5px
+			+s(c-marc2)
 	&:hover
 		opacity: 1
 		visibility: visible
@@ -260,6 +284,10 @@
 		background: #ad2a1e
 	p
 		padding: 10px 12px 0 18px
+		font-weight: 400 
+		font-size: 12px
+		font-family: "Roboto","sans-serif"
+		text-transform: capitalize
 	
 .cycle__title
 	padding: 13px 30px 13px 18px
@@ -301,6 +329,26 @@
 			content: ""
 			top: 50% 
 			left: 12px
+		span
+			position: absolute
+			content: ""
+			top: 50% 
+			left: 12px
+
+// @keyframes vibrate 
+// 	50% 
+// 		-webkit-transform: rotate(2deg) translateX(1px)
+// 		transform: rotate(2deg) translateX(1px)
+// 	100%
+// 		-webkit-transform: rotate(-2deg) translateX(-1px)
+// 		transform: rotate(-2deg) translateX(-1px)
+
+// .callback__phone
+// 	i
+// 		display: block
+// 		&:hover
+// 			-webkit-animation: vibrate 0.1s infinite
+// 			animation: vibrate 0.1s infinite
 
 //signup
 .signup
@@ -316,7 +364,7 @@
 	right: 65px
 	.callback__top
 		i
-			&:before
+			span
 				margin-top: -6.5px
 				+s(callback-pic)
 // data
