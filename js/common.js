@@ -163,4 +163,13 @@ $(document).ready(function() {
     $(window).load(function() {
         $('.out').removeClass('is-loading');
         $('.loader').hide().remove();
+
+        function slidenav() {
+          $(".js-nav").addClass('is-show');
+        }
+        setTimeout(slidenav, 1000);
+        function slidemenu() {
+          $(".js-menu").show("slide", { direction: "right" }, 1000);
+        }
+        setTimeout(slidemenu, 2000);
     });

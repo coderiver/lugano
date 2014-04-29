@@ -399,18 +399,30 @@
 		+s(data-pic)
 
 //menu
-.menu
+.nav
 	position: absolute
 	bottom: 92px
 	left: 265px
 	z-index: 200
 	font-size: 0
 	li
-		position: relative
+		position: relative 
+		top: 20px
 		padding-top: 4px
 		margin-right: 3px
 		vertical-align: top
 		display: inline-block
+		visibility: hidden
+		opacity: 0
+		+transition(all .2s linear) 
+		&.nav__item-1
+			+transition-delay(.1s)
+		&.nav__item-2
+			+transition-delay(.3s) 
+		&.nav__item-3
+			+transition-delay(.5s)
+		&.nav__item-4
+			+transition-delay(.7s)
 		a
 			height: 50px
 			line-height: 50px
@@ -434,41 +446,69 @@
 		// &:hover
 		// 	.menu__list
 		// 		display: block
-	.menu__list
-		position: absolute
-		left: 0
-		top: -48px
-		width: 320px
-		font-size: 0
-		.menu__item
-			width: 49px
-			height: 49px
+	&.is-show
+		li
+			top: 0
+			opacity: 1
+			visibility: visible
+
+	
+.menu
+	position: absolute
+	bottom: 145px
+	left: 265px
+	width: 320px
+	font-size: 0
+	z-index: 300
+	display: none
+	.menu__item
+		margin-right: 3px
+		width: 49px
+		height: 49px
+		display: inline-block
+		+box
+		a
+			width: 100%
+			height: 100%
+			padding: 0
+			line-height: 42px
+			text-align: center
+			display: inline-block
+			background-color: #000
+			background: rgba(#000, .8)
+			+transition(0.2s)
 			+box
-			a
-				padding: 0
-				line-height: 42px
-				text-align: center
-				i
-					vertical-align: middle
-					display: inline-block
-			&.menu__item1
-				i
-					+s(mp1)
-			&.menu__item2
-				i
-					+s(mp2)
-			&.menu__item3
-				i
-					+s(mp3)
-			&.menu__item4
-				i
-					+s(mp4)
-			&.menu__item5
-				i
-					+s(mp5)
-			&.menu__item6
-				i
-					+s(mp6)
+			i
+				vertical-align: middle
+				display: inline-block
+			&:hover
+				background: #b02d1b
+				+transition(0.2)
+		&.menu__item1
+			i
+				+s(mp1)
+		&.menu__item2
+			i
+				+s(mp2)
+		&.menu__item3
+			i
+				+s(mp3)
+		&.menu__item4
+			i
+				+s(mp4)
+		&.menu__item5
+			i
+				+s(mp5)
+		&.menu__item6
+			i
+				+s(mp6)
+.menu, .nav
+	.is-active
+		a
+			background: #b02d1b
+// .nav
+// 	.is-none
+// 		display: none
 
 //technology
 .technology
