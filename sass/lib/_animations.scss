@@ -160,17 +160,33 @@ $default-animation-fill-mode: none;
   @include experimental(animation-fill-mode, $fill-mode);
 }
 
-.callback__phone{
-  span{ 
-    display: block; 
+// .callback__phone{
+//   span{ 
+//     display: block; 
     
-    &:hover{
-      animation: vibrate 0.01s infinite;
-    }
-  }
-}
+//     &:hover{
+//       -webkit-animation: vibrate 0.01s infinite;
+//       animation: vibrate 0.01s infinite;
+//     }
+//   }
+// }
 
-@keyframes vibrate {
-  50% { transform: rotate(1deg) translateX(1px); }
-  100% { transform: rotate(-1deg) translateX(-1px); }
-}
+// @keyframes vibrate {
+//   50% { transform: rotate(1deg) translateX(1px); }
+//   100% { transform: rotate(-1deg) translateX(-1px); }
+// }
+
+// img { 
+//   display: block; 
+//   margin: 20px auto;
+//   cursor: pointer;
+  
+//   &:hover {
+//     animation: vibrate 0.01s infinite;
+//   }
+// }
+
+// @keyframes vibrate {
+//   50% { transform: rotate(1deg) translateX(1px); }
+//   100% { transform: rotate(-1deg) translateX(-1px); }
+// }

@@ -33,6 +33,15 @@ $(document).ready(function() {
     }
     setTimeout(announcer, 3000);
 
+        
+    $("#datepicker").datepicker({
+        // showOn: "button",
+        // buttonImage: "img/icons/data-pic.png",
+        // buttonImageOnly: true
+    });
+
+
+     $(".phone").mask("+7(999) 999-99-99");
 
 	// tabs
     function tab() {
@@ -136,6 +145,22 @@ $(document).ready(function() {
     	}
     	gallery();
     }
-    
+     
 
 });
+    
+
+    // preloader
+    $('.site-wrap').addClass('is-loading');
+
+    $(window).load(function() {
+        $('.site-wrap').removeClass('is-loading');
+        $('.loader').hide().remove();
+    });
+
+    $('.out').addClass('is-loading');
+
+    $(window).load(function() {
+        $('.out').removeClass('is-loading');
+        $('.loader').hide().remove();
+    });

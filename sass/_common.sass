@@ -12,12 +12,27 @@ body
 .site-wrap
 	position: relative
 	min-height: 100%
+.site-wrap, .out
+	+transition(opacity 1s ease)
+	+opacity(1)
 	+clr
+	&.is-loading
+		+opacity(0)
+
 	.footer
 		position: absolute
 		left: 0
 		bottom: 0
-
+		
+// preloader
+.loader
+	background: #fff url('../img/loader.gif') no-repeat center center
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	left: 0
+	
 //wrapper
 .wrapper
 	position: relative
@@ -181,3 +196,35 @@ input
 			text-decoration: none
 			&:hover
 				text-decoration: underline
+
+//vibrate
++keyframes (vibrate)
+	50%
+		-webkit-transform: rotate(1deg) translateX(1px)
+		transform: rotate(1deg) translateX(1px) 
+	100%
+		-webkit-transform: rotate(-1deg) translateX(-1px)
+		transform: rotate(-1deg) translateX(-1px)
+
+
+.callback__phone
+	span
+		display: block
+		&:hover
+			+animation(vibrate 0.1s linear infinite)
+    
+  
+
+
+// ui
+// .ui-datepicker-trigger
+// 	position: absolute
+// 	right: -28px
+// 	top: 6px
+// 	cursor: pointer
+
+.ui-widget-header
+	background: #AD2A1E !important
+
+.ui-datepicker
+	z-index: 3000 !important
