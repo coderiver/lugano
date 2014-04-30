@@ -33,7 +33,58 @@ $(document).ready(function() {
     }
     setTimeout(announcer, 3000);
 
-        
+
+    $('.js-tech-btn').click(function(){
+        var el = $('.js-tech-block');
+        if (el.hasClass('is-active')) {
+            var element = $('.scrollblock').jScrollPane({});
+            var api = element.data('jsp');
+            api.destroy();
+            el.slideUp();
+            el.removeClass('is-active');
+        }
+        else{
+            el.slideDown(function(){
+                if($(this).is(":visible")) {
+                    $('.scrollblock').jScrollPane({
+                        hideFocus: true
+                    });
+                }
+            });
+            el.addClass('is-active');
+        }
+
+        $('.js-tech-btn').toggleClass('is-active');
+        $('.js-close').toggleClass('is-active');
+        return false;
+     })
+   
+    $('.js-close').click(function(){
+        var el = $('.js-tech-block');
+        if (el.hasClass('is-active')) {
+            var element = $('.scrollblock').jScrollPane({});
+            var api = element.data('jsp');
+            api.destroy();
+            el.slideUp();
+            el.removeClass('is-active');
+        }
+        else{
+            el.slideDown(function(){
+                if($(this).is(":visible")) {
+                    $('.scrollblock').jScrollPane({
+                        hideFocus: true
+                    });
+                }
+            });
+            el.addClass('is-active');
+        }
+
+        $('.js-close').toggleClass('is-active');
+        return false;
+     })
+
+
+
     $("#datepicker").datepicker({
         // showOn: "button",
         // buttonImage: "img/icons/data-pic.png",
@@ -147,8 +198,9 @@ $(document).ready(function() {
     }
      
 
-});
     
+
+});
 
     // preloader
     $('.site-wrap').addClass('is-loading');
@@ -172,4 +224,13 @@ $(document).ready(function() {
           $(".js-menu").show("slide", { direction: "right" }, 1000);
         }
         setTimeout(slidemenu, 2000);
+    });
+
+    $('.js-article').addClass('jspScrollable');
+    $('.js-article').show(function(){
+        if($(this).is(":visible")) {
+            $('.scrollblock').jScrollPane({
+                hideFocus: true
+            });
+        }
     });

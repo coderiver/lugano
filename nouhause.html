@@ -6,11 +6,14 @@
 	<title>nouhause</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/jquery-ui-1.10.4.custom.min.css" >
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div class="out">
+	
+	<!-- BEGIN .header -->
 	<header class="header">
 		<div class="wrapper">
 			<ul class="header__nav">
@@ -24,29 +27,29 @@
 					<a href="#">Местоположение</a>
 				</li>
 				<li class="header__logo">
-						<a class="header__logo_1" href="#"></a>
-						<div class="header__shop">
-							<div class="cycle-slideshow js-logo" 
-								data-cycle-fx="scrollHorz"
-								data-cycle-timeout="0"
-								data-cycle-pause-on-hover="true"
-								data-cycle-slides=".cycle__item"
-								data-cycle-prev=".cycle__but_pre"
-								data-cycle-next=".cycle__but_nex"
-								data-cycle-pager-template="<button></button>"
-								>
-						    <div class="cycle__item">
-									<img src="img/logo2.png" alt="img">
-								</div>
-						    <div class="cycle__item">
-									<img src="img/logo2.png" alt="img">
-								</div>
-								<button class="cycle__but cycle__but_pre"></button>
-								<button class="cycle__but cycle__but_nex"></button>
+					<a class="header__logo_1" href="#"></a>
+					<div class="header__shop">
+						<div class="cycle-slideshow js-logo" 
+							data-cycle-fx="scrollHorz"
+							data-cycle-timeout="0"
+							data-cycle-pause-on-hover="true"
+							data-cycle-slides=".cycle__item"
+							data-cycle-prev=".cycle__but_pre"
+							data-cycle-next=".cycle__but_nex"
+							data-cycle-pager-template="<button></button>"
+							>
+					    <div class="cycle__item">
+								<img src="img/logo2.png" alt="img">
 							</div>
-							<button class="btn btn_top js-btntop"></button>
+					    <div class="cycle__item">
+								<img src="img/logo2.png" alt="img">
+							</div>
+							<button class="cycle__but cycle__but_pre"></button>
+							<button class="cycle__but cycle__but_nex"></button>
 						</div>
-					</li>
+						<button class="btn btn_top js-btntop"></button>
+					</div>
+				</li>
 				<li>
 					<a href="#">Забронировать</a>
 				</li>
@@ -62,13 +65,15 @@
 						<input type="text" placeholder="Ваше имя">
 					</div>
 					<div class="form__row">
-						<input type="text" placeholder="Номер телефона">
+						<input class="phone" type="text" placeholder="Номер телефона">
 					</div>
 					<div class="form__row">
 						<div class="data">
 							<div class="data__text">Дата просмотра:</div>
-							<div class="data__col">22.05.214</div>
-							<i class="data__pic"></i>
+							<div class="data__col">
+								<input id="datepicker" type="text" placeholder="22.05.214">
+							</div>
+							<button class="data__pic"></button>
 						</div>
 					</div>
 					<button class="btn">Записаться!</button>
