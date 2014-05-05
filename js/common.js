@@ -13,20 +13,24 @@ $(document).ready(function() {
         $('.js-bg').toggleClass('is-active');
         return false;
      })
+    
     var form_trigger = $('.js-form-trigger');
+    
     form_trigger.on('click', function(){
         $(this).toggleClass('is-active');
         $(this).next().slideToggle();
     });
 
     form_trigger.parent().click(function (e) {
-      e.preventDefault();
-      return false;
+        e.preventDefault();
+        return false;
     });
 
     $(document).on('click', function(){
         form_trigger.next().slideUp();
-    })
+    });
+
+
 
     function announcer() {
       $(".js-announcer").slideToggle();
@@ -86,9 +90,9 @@ $(document).ready(function() {
 
 
     $("#datepicker").datepicker({
-        // showOn: "button",
-        // buttonImage: "img/icons/data-pic.png",
-        // buttonImageOnly: true
+        showOn: "both",
+        buttonImage: "img/data-pic.png",
+        buttonImageOnly: true
     });
 
 
