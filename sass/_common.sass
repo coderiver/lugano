@@ -249,14 +249,40 @@ input
 // 	right: -28px
 // 	top: 6px
 // 	cursor: pointer
-
+.dp
+	display: none
+	position: absolute
+	top: 100%
+	left: 0
+	z-index: 10 
+	
 .ui-widget-header
 	background: #AD2A1E !important
 
 .ui-datepicker
 	z-index: 3000 !important
 	
+.ui-datepicker-trigger
+	cursor: pointer
 
+.ui-datepicker .ui-datepicker-next span, .ui-datepicker .ui-datepicker-prev span
+	top: 50% !important
+	left: 50% !important
+	margin: -6px 0 0 -6px !important
+	cursor: pointer
+.ui-corner-all
+	cursor: pointer !important
+
+.ui-datepicker .ui-datepicker-prev span
+	+s(ui-href)
+
+.ui-datepicker .ui-datepicker-next span
+	+s(ui-next)
+
+// .ui-icon-circle-triangle-w
+	
+// .ui-icon-circle-triangle-e
+	
 
 .scrollblock
 	overflow: hidden

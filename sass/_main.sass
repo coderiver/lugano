@@ -30,6 +30,8 @@
 			&:hover
 				background: #ad2a1e
 				+transition(0.2s)
+			span
+				font-weight: 700
 
 .header__logo
 	width: 278px
@@ -131,8 +133,7 @@
 .cycle__index
 	position: absolute
 	min-width: 145px
-	background-color: #000
-	background: rgba(#000, .6)
+	display: none
 	+clr
 	&:before
 		position: absolute
@@ -152,12 +153,23 @@
 		background: #ad2a1e
 	a
 		padding: 13px 30px 13px 18px
+		width: 100%
 		font-size: 14px
 		text-transform: uppercase
 		font-weight: 700 
 		color: #fff
 		text-decoration: none
+		background-color: #000
+		background: rgba(#000, .6)
 		display: inline-block
+		+box
+	&.is-active
+		&:before
+			display: none
+		&:after
+			display: none
+		.cycle__die
+			opacity: 0
 	.cycle__marc
 		position: absolute
 		right: -34px
@@ -189,18 +201,21 @@
 				display: none
 			i
 				display: block
+			// + .cycle__die
+			// 	display: none
 			+ .cycle__cont-wrap
 				.cycle__cont
 					opacity: 1
 					right: 0
 					visibility: visible
-
 .header__shop
 	position: relative
 	line-height: 124px
+	.cycle-slideshow
+		height: 128px
 	.cycle__item
-		height: 124px !important
-		min-height: 124px
+		height: none !important
+		min-height: 1px !important
 		overflow: hidden
 		+box
 		img
@@ -217,25 +232,26 @@
 	+rotate(180)
 .cycle__but_nex
 	right: 13px
-.cycle__index1
-	top: 29%
-	left: 15%
+// .cycle__index1
+// 	top: 29%
+// 	left: 5%
 
-.cycle__index2
-	top: 30%
-	left: 43%
+// .cycle__index2
+// 	top: 30%
+// 	left: 42%
 	
-.cycle__index3
-	top: 30%
-	left: 70%
+// .cycle__index3
+// 	top: 30%
+// 	left: 76%
 	
-.cycle__index4
-	top: 42%
-	left: 27%
+// .cycle__index4
+// 	top: 42%
+// 	left: 18%
 	
-.cycle__index5
-	top: 42%
-	left: 52%
+// .cycle__index5
+// 	top: 42%
+// 	left: 52%
+
 .cycle__cont-wrap
 	position: absolute
 	left: 0
@@ -395,15 +411,22 @@
 		// border: 1px solid #c4c4c4
 		// background: rgba(#000, 0.6) 
 		// +border-radius(1px)
-	.ui-datepicker-trigger
-		position: absolute
-		top: 6px
-		right: -25px
+		.datepicker-trigger
+			position: absolute
+			top: 6px
+			right: -26px
+			cursor: pointer
+			display: block
+			+s(data-pic)
+	// .ui-datepicker-trigger
+	// 	position: absolute
+	// 	top: 6px
+	// 	right: -25px
 //menu
 .nav
 	position: absolute
 	bottom: 92px
-	left: 270px
+	left: 290px
 	z-index: 200
 	font-size: 0
 	li
@@ -457,16 +480,22 @@
 .menu
 	position: absolute
 	bottom: 145px
-	left: 270px
-	width: 320px
+	left: 640px
+	width: 420px
 	font-size: 0
 	z-index: 300
 	display: none
+	+transition(all 2.7s linear) 
 	.menu__item
+		position: relative
+		left: 100px
 		margin-right: 3px
 		width: 49px
 		height: 49px
 		display: inline-block
+		opacity: 0
+		visibility: hidden
+		+transition(all 0.2s linear) 
 		+box
 		a
 			width: 100%
@@ -486,23 +515,41 @@
 				background: #b02d1b
 				+transition(0.2)
 		&.menu__item1
+			// left: 30px
+			+transition-delay(.4s)
 			i
 				+s(mp1)
 		&.menu__item2
+			// left: 80px
+			+transition-delay(.8s)
 			i
 				+s(mp2)
 		&.menu__item3
+			// left: 130px
+			+transition-delay(1.2s)
 			i
 				+s(mp3)
 		&.menu__item4
+			// left: 160px
+			+transition-delay(1.6s)
 			i
 				+s(mp4)
 		&.menu__item5
+			// left: 190px
+			+transition-delay(2s)
 			i
 				+s(mp5)
 		&.menu__item6
+			// left: 230px
+			+transition-delay(2.4s)
 			i
 				+s(mp6)
+	&.is-show
+		left: 290px
+		.menu__item
+			left: 0 
+			opacity: 1
+			visibility: visible
 .menu
 	.is-active
 		a
@@ -518,7 +565,7 @@
 //technology
 .technology
 	position: absolute
-	left: 270px
+	left: 290px
 	bottom: 204px
 	padding: 24px 35px
 	width: 665px

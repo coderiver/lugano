@@ -20,7 +20,7 @@
 		<div class="wrapper">
 			<ul class="header__nav">
 				<li class="is-active">
-					<a href="#">НОУХАУСЫ</a>
+					<a href="#"><span>НОУХАУ</span>СЫ</a>
 				</li>
 				<li>
 					<a href="#">План поселка</a>
@@ -73,7 +73,9 @@
 						<div class="data">
 							<div class="data__text">Дата просмотра:</div>
 							<div class="data__col">
-								<input id="datepicker" type="text" placeholder="22.05.214">
+								<input type="text" placeholder="22.05.214">
+								<div id="datepicker" class="dp js-datepicker"></div>
+								<i class="datepicker-trigger js-datepicker-trigger"></i>
 							</div>
 						</div>
 					</div>
@@ -181,55 +183,62 @@
 	    	<!-- BEGIN .wrapper -->
 				<div class="wrapper wrapper_abs">
 					<img src="img/bg-pic.png" alt="img">
-					<div class="cycle__index cycle__index1">
-						<a href="#">3D - технология возведение<br>стен и кровли (Австрия)</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index1 js-index" style="left: 5%; top: 29%;">
+						<a class="cycle__die" href="#">3D - технология возведение<br>стен и кровли (Австрия)</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc">
+							<i></i>
+						</div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
 								<i></i>
 							</a>
 						</div>
 					</div>
-					<div class="cycle__index cycle__index2">
-						<a href="#">Напрягающий бетон</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index2 js-index" style="left: 42%; top: 30%;">
+						<a class="cycle__die" href="#">Напрягающий бетон</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc"><i></i></div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 								<i></i>
 							</a>
 						</div>
 					</div>
-					<div class="cycle__index cycle__index3">
-						<a href="#">Умный дом</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index3 js-index" style="left: 76%; top: 30%;">
+						<a class="cycle__die" href="#">Умный дом</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc"><i></i></div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
 								<i></i>
 							</a>
 						</div>
 					</div>
-					<div class="cycle__index cycle__index4">
-						<a href="#">Геотермальное отопление</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index4 js-index" style="left: 18%; top: 42%;">
+						<a class="cycle__die" href="#">Геотермальное отопление</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc"><i></i></div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
 								<i></i>
 							</a>
 						</div>
 					</div>
-					<div class="cycle__index cycle__index5">
-						<a href="#">Конвекционная вентиляция</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index5 js-index" style="left: 52%; top: 42%;">
+						<a class="cycle__die" href="#">Конвекционная вентиляция</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc"><i></i></div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
 								<i></i>
@@ -243,55 +252,62 @@
 	    	<!-- BEGIN .wrapper -->
 				<div class="wrapper wrapper_abs">
 					<img src="img/bg-pic.png" alt="img">
-					<div class="cycle__index cycle__index1">
-						<a href="#">3D - технология возведение<br>стен и кровли (Австрия)</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index1 js-index" style="left: 5%; top: 29%;">
+						<a class="cycle__die" href="#">3D - технология возведение<br>стен и кровли (Австрия)</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc">
+							<i></i>
+						</div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
 								<i></i>
 							</a>
 						</div>
 					</div>
-					<div class="cycle__index cycle__index2">
-						<a href="#">Напрягающий бетон</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index2 js-index" style="left: 42%; top: 30%;">
+						<a class="cycle__die" href="#">Напрягающий бетон</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc"><i></i></div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 								<i></i>
 							</a>
 						</div>
 					</div>
-					<div class="cycle__index cycle__index3">
-						<a href="#">Умный дом</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index3 js-index" style="left: 76%; top: 30%;">
+						<a class="cycle__die" href="#">Умный дом</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc"><i></i></div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
 								<i></i>
 							</a>
 						</div>
 					</div>
-					<div class="cycle__index cycle__index4">
-						<a href="#">Геотермальное отопление</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index4 js-index" style="left: 18%; top: 42%;">
+						<a class="cycle__die" href="#">Геотермальное отопление</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc"><i></i></div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
 								<i></i>
 							</a>
 						</div>
 					</div>
-					<div class="cycle__index cycle__index5">
-						<a href="#">Конвекционная вентиляция</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index5 js-index" style="left: 52%; top: 42%;">
+						<a class="cycle__die" href="#">Конвекционная вентиляция</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc"><i></i></div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
 								<i></i>
@@ -305,55 +321,62 @@
 	    	<!-- BEGIN .wrapper -->
 				<div class="wrapper wrapper_abs">
 					<img src="img/bg-pic.png" alt="img">
-					<div class="cycle__index cycle__index1">
-						<a href="#">3D - технология возведение<br>стен и кровли (Австрия)</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index1 js-index" style="left: 5%; top: 29%;">
+						<a class="cycle__die" href="#">3D - технология возведение<br>стен и кровли (Австрия)</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc">
+							<i></i>
+						</div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
 								<i></i>
 							</a>
 						</div>
 					</div>
-					<div class="cycle__index cycle__index2">
-						<a href="#">Напрягающий бетон</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index2 js-index" style="left: 42%; top: 30%;">
+						<a class="cycle__die" href="#">Напрягающий бетон</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc"><i></i></div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 								<i></i>
 							</a>
 						</div>
 					</div>
-					<div class="cycle__index cycle__index3">
-						<a href="#">Умный дом</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index3 js-index" style="left: 76%; top: 30%;">
+						<a class="cycle__die" href="#">Умный дом</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc"><i></i></div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
 								<i></i>
 							</a>
 						</div>
 					</div>
-					<div class="cycle__index cycle__index4">
-						<a href="#">Геотермальное отопление</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index4 js-index" style="left: 18%; top: 42%;">
+						<a class="cycle__die" href="#">Геотермальное отопление</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc"><i></i></div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
 								<i></i>
 							</a>
 						</div>
 					</div>
-					<div class="cycle__index cycle__index5">
-						<a href="#">Конвекционная вентиляция</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index5 js-index" style="left: 52%; top: 42%;">
+						<a class="cycle__die" href="#">Конвекционная вентиляция</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc"><i></i></div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
 								<i></i>
@@ -367,55 +390,62 @@
 	    	<!-- BEGIN .wrapper -->
 				<div class="wrapper wrapper_abs">
 					<img src="img/bg-pic.png" alt="img">
-					<div class="cycle__index cycle__index1">
-						<a href="#">3D - технология возведение<br>стен и кровли (Австрия)</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index1 js-index" style="left: 5%; top: 29%;">
+						<a class="cycle__die" href="#">3D - технология возведение<br>стен и кровли (Австрия)</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc">
+							<i></i>
+						</div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
 								<i></i>
 							</a>
 						</div>
 					</div>
-					<div class="cycle__index cycle__index2">
-						<a href="#">Напрягающий бетон</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index2 js-index" style="left: 42%; top: 30%;">
+						<a class="cycle__die" href="#">Напрягающий бетон</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc"><i></i></div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 								<i></i>
 							</a>
 						</div>
 					</div>
-					<div class="cycle__index cycle__index3">
-						<a href="#">Умный дом</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index3 js-index" style="left: 76%; top: 30%;">
+						<a class="cycle__die" href="#">Умный дом</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc"><i></i></div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
 								<i></i>
 							</a>
 						</div>
 					</div>
-					<div class="cycle__index cycle__index4">
-						<a href="#">Геотермальное отопление</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index4 js-index" style="left: 18%; top: 42%;">
+						<a class="cycle__die" href="#">Геотермальное отопление</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc"><i></i></div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
 								<i></i>
 							</a>
 						</div>
 					</div>
-					<div class="cycle__index cycle__index5">
-						<a href="#">Конвекционная вентиляция</a>
-						<div class="cycle__marc"><i></i></div>
+					<div class="cycle__index cycle__index5 js-index" style="left: 52%; top: 42%;">
+						<a class="cycle__die" href="#">Конвекционная вентиляция</a>
+						<div class="cycle__block"></div>
+						<div class="cycle__marc js-marc"><i></i></div>
 						<div class="cycle__cont-wrap">
-							<a href="#" class="cycle__cont">
+							<a href="#" class="cycle__cont js-marc">
 								<h3 class="cycle__title">Напрягающий бетон</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
 								<i></i>

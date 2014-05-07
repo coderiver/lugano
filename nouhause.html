@@ -18,7 +18,7 @@
 		<div class="wrapper">
 			<ul class="header__nav">
 				<li class="is-active">
-					<a href="#">НОУХАУСЫ</a>
+					<a href="#"><span>НОУХАУ</span>СЫ</a>
 				</li>
 				<li>
 					<a href="#">План поселка</a>
@@ -71,9 +71,10 @@
 						<div class="data">
 							<div class="data__text">Дата просмотра:</div>
 							<div class="data__col">
-								<input id="datepicker" type="text" placeholder="22.05.214">
+								<input type="text" placeholder="22.05.214">
+								<div id="datepicker" class="dp js-datepicker"></div>
+								<i class="datepicker-trigger js-datepicker-trigger"></i>
 							</div>
-							<button class="data__pic"></button>
 						</div>
 					</div>
 					<button class="btn">Записаться!</button>
@@ -83,7 +84,7 @@
 				<div class="callback__top js-form-trigger"><i class="callback__phone"><span></span></i>Обратный звонок</div>
 				<div class="form">
 					<div class="form__row">
-						<input type="text" placeholder="Номер телефона">
+						<input class="phone" type="text" placeholder="Номер телефона">
 					</div>
 					<button class="btn">Заказать звонок!</button>
 				</div>
@@ -91,7 +92,7 @@
 		</div>
 	</header>
 	<!-- END .header -->
-
+ 
 	<!-- BEGIN content -->
 	<div class="content">
 		<div class="wrapper">

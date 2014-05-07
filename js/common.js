@@ -35,7 +35,7 @@ $(document).ready(function() {
     function announcer() {
       $(".js-announcer").slideToggle();
     }
-    setTimeout(announcer, 3000);
+    setTimeout(announcer, 5000);
 
 
     $('.js-tech-btn').click(function(){
@@ -87,16 +87,35 @@ $(document).ready(function() {
         return false;
      })
 
-
-
-    $("#datepicker").datepicker({
-        showOn: "both",
-        buttonImage: "img/data-pic.png",
-        buttonImageOnly: true
+    var dp = $('#datepicker');
+    dp.datepicker({
+        onSelect: function(date) {
+            dp.prev().val(date);
+            dp.fadeOut();
+        }
+    });
+    dp.prev().focus(function(){
+        dp.fadeIn();
     });
 
+    $(".js-marc").each(function(){
 
-     $(".phone").mask("+7(999) 999-99-99");
+        $(this).mouseenter(function() {
+            $(this).parents('.js-index').addClass('is-active');
+        });
+
+        $(this).mouseleave(function() {
+            $(this).parents('.js-index').removeClass('is-active');
+        });
+
+    });
+
+    $('.js-datepicker-trigger').click(function(){
+        $('.js-datepicker').slideToggle();
+        return false;
+     })
+
+    $(".phone").mask("+7(999) 999-99-99");
 
 	// tabs
     function tab() {
@@ -225,9 +244,14 @@ $(document).ready(function() {
         }
         setTimeout(slidenav, 1000);
         function slidemenu() {
-          $(".js-menu").show("slide", { direction: "right" }, 1000);
+          $(".js-menu").slideToggle({ direction: "right" }, 1000);
+          $(".js-menu").addClass('is-show');
         }
-        setTimeout(slidemenu, 2000);
+        setTimeout(slidemenu, 1800);
+        function index() {
+          $(".js-index").show("slide", { direction: "right" }, 500);
+        }
+        setTimeout(index, 500);
     });
 
     $('.js-article').addClass('jspScrollable');
