@@ -28,6 +28,12 @@ $(document).ready(function() {
 
     $(document).on('click', function(){
         form_trigger.next().slideUp();
+        $('.js-technology').removeClass('is-active');
+        $('.js-technology').addClass('is-hide');
+        $('.js-close').removeClass('is-active');
+        $('.js-tech-block').hide();
+        $('.js-tech-block').removeClass('is-active');  
+        $('.js-index').show("slow");  
     });
 
 
@@ -57,12 +63,19 @@ $(document).ready(function() {
             });
             el.addClass('is-active');
         }
-
+        $('.js-technology').toggleClass('is-active');
         $('.js-tech-btn').toggleClass('is-active');
         $('.js-close').toggleClass('is-active');
+        $('.js-technology').removeClass('is-hide');
+        $('.js-index').slideToggle();
         return false;
      })
    
+    $('.js-close').click(function(){
+        $('.js-technology').removeClass('is-active');
+        $('.js-index').slideToggle();
+     })
+
     $('.js-close').click(function(){
         var el = $('.js-tech-block');
         if (el.hasClass('is-active')) {
@@ -131,7 +144,7 @@ $(document).ready(function() {
                 $(this).addClass("is-active");
                 $(this).parent().addClass("is-active");
                 tab_cont.hide();
-                $(this).parents(".js-tab-group").find("."+index).show();
+                $(this).parents(".js-tab-group").find("."+index).show("slide", { direction: "right" }, 500);
                 return false;
             });
         });
@@ -150,7 +163,7 @@ $(document).ready(function() {
                 $(this).addClass("is-active");
                 $(this).parent().addClass("is-active");
                 tab_cont.hide();
-                $(this).parent().parent().parent().parent(".js-tab-group").find("."+index).show();
+                $(this).parent().parent().parent().parent(".js-tab-group").find("."+index).show("slide", { direction: "right" }, 500);
                 return false;
             });
         });
@@ -164,6 +177,17 @@ $(document).ready(function() {
         tab();
         tab2();
     };
+
+    // $('.ui-corner-top').click(function(){
+    //     $('.ui-corner-bottom').show("slide", { direction: "right" }, 500);
+    // })
+
+    $(".ui-corner-top").each(function(){
+        $(this).click(function() {
+           $(".ui-corner-bottom").hide("slide", { direction: "left" }, 5); 
+           $(".ui-corner-bottom").show("slide", { direction: "right" }, 500); 
+        });
+    });
 
     // toggle reserve popup
 

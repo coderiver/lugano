@@ -574,6 +574,15 @@
 	background-color: #000
 	background: rgba(#000, 0.8)  
 	+box
+	&.is-active
+		top: 18%
+		.technology__wrap
+			max-height: 80%
+	&.is-hide
+		.jspContainer
+			height: 70px !important
+		.jspVerticalBar
+			display: none
 	p
 		margin-top: 15px
 		padding-right: 98px
@@ -636,7 +645,6 @@
 		display: block
 
 .technology__wrap
-	max-height: 470px
 	overflow: hidden
 	&.jspScrollable
 		p

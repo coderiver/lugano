@@ -4,18 +4,20 @@
     min-height: 100%
     height: auto !important
     height: 100%
+    // zoom: 0.953
     margin: 0 auto -31px
     background: url(../img/pattern-light.jpg) 
 .push
     height: 31px
-    
+.push, .footer
+    margin-top: -31px
 .content
-    padding-top: 172px
+    padding-top: 155px
 .house      
     .house__content
         +clr
         height: 702px
-        margin-bottom: 22px     
+        margin-bottom: 0     
     .house__left
         position: relative
         float: left
@@ -29,7 +31,7 @@
     .house__nav
         font-size: 0
         text-align: center
-        margin-bottom: 23px
+        margin: 22px 0 40px
         li
             display: inline-block
             a
@@ -58,7 +60,7 @@
         font-family: 'Roboto Condensed', sans-serif
     .info__content
         position: relative
-        padding: 20px 24px 19px
+        padding: 13px 24px 19px
         border-bottom: 1px dashed #4b4b4b
         .btn
             width: 100%
@@ -66,6 +68,8 @@
             margin-bottom: 5px
             font-family: 'Roboto', sans-serif
             font-size: 13px
+    .info__content_top
+        padding-bottom: 13px
 .reserve
     position: absolute
     top: 0px
@@ -130,6 +134,7 @@
         height: 85px
         margin-left: 6px
         margin-bottom: 6px
+        cursor: pointer
         &.is-active
             +opacity(.61)
 .gallery
@@ -235,7 +240,11 @@
             text-align: center
             img
                 display: inline-block
+                height: 220px 
                 max-width: 100%
+        .option__left_top
+            img
+                height: 275px
         .option__right
             float: left
             width: 50%
@@ -243,6 +252,8 @@
     &.option_last
         margin-bottom: 0        
 .tabs
+    background: none !important
+    border: none !important 
     .tabs__nav
         +clr
         margin-bottom: 29px
@@ -262,7 +273,17 @@
                 a
                     color: #fff
                     background: #b02d1b
-                    
+        .ui-state-default
+            background: none !important
+            border: none 
+    .ui-widget-header
+        border: none 
+        background: none
+        &:focus
+            border: none 
+.tabs_ui
+    height: 299px
+    overflow: hidden
 .materials
     margin-bottom: 27px
     li
@@ -270,8 +291,8 @@
         margin-bottom: 7px
         .materials__img
             float: left
-            width: 52px
-            height: 52px
+            width: 48px
+            height: 48px
             margin-right: 19px
             img
                 width: 100%
