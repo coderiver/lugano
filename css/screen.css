@@ -35,6 +35,8 @@ body:after { content: " "; display: table; clear: both; }
 
 .wrapper_abs { position: absolute; left: 50%; top: 0; height: 100%; margin-left: -600px; }
 .wrapper_abs .announcer { position: absolute; left: 48px; bottom: 31px; z-index: 200; display: none; background: url('../img/icons-s3d42c0c852.png') 0 0 no-repeat; width: 106px; height: 194px; }
+.wrapper_abs .announcer:hover embed { display: block; }
+.wrapper_abs .announcer embed { margin: -6px 0 0 -24px; display: none; }
 
 .header { position: fixed; top: 0; left: 0; height: 59px; width: 100%; z-index: 400; background-color: #1d1d1d; background: rgba(29, 29, 29, 0.8); }
 
