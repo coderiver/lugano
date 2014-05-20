@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	
 	// btn top
-
     $('.js-btntop').click(function(){
         $('.js-logo').slideToggle();
         $('.js-btntop').toggleClass('is-active');
@@ -35,8 +34,42 @@ $(document).ready(function() {
         $('.js-tech-block').removeClass('is-active');  
         $('.js-index').show("slow");  
     });
+    
+    // flashMovie = null;
+    // function announcer__object() {
+    //     flashMovie = $('.js-announcer');
 
+    //     flashMovie.flash(
+    //         {
+    //             swf: 'video55-160х200.swf',
+    //             width: 481,
+    //             height: 86,
+    //             play: false,
+    //             flashvars: {
+    //                 message: 'I come from Flash.'
+    //             },
+    //         }
+    //     );
+    // }
 
+    // function announcer__object() {
+    //     $('.announcer__object').addClass('is-object');
+    //     $('.is-object').flash('img/video55-160х200.swf');
+    //     $('.is-object').stop();
+    //     // $('.is-object').pause(); 
+    //     // $('.is-object').StopPlay();
+    // }
+    // setTimeout(announcer__object, 5500);
+
+    // $('.is-object').mouseenter(function() {
+    //     play: true
+    // });
+
+    // $('.is-object').mouseleave(function() {
+    //     play: false
+    // });
+
+    // GetDocumentObjectID("FLVPlayer").StopPlay();
 
     function announcer() {
       $(".js-announcer").slideToggle();
@@ -182,12 +215,12 @@ $(document).ready(function() {
     //     $('.ui-corner-bottom').show("slide", { direction: "right" }, 500);
     // })
 
-    $(".ui-corner-top").each(function(){
-        $(this).click(function() {
-           $(".ui-corner-bottom").hide("slide", { direction: "left" }, 5); 
-           $(".ui-corner-bottom").show("slide", { direction: "right" }, 500); 
-        });
-    });
+    // $(".ui-corner-top").each(function(){
+    //     $(this).click(function() {
+    //        $(".ui-corner-bottom").hide("slide", { direction: "right" }, 500); 
+    //        $(".ui-corner-bottom").show("slide", { direction: "left" }, 500); 
+    //     });
+    // });
 
     // toggle reserve popup
 

@@ -52,13 +52,13 @@ body
 		bottom: 31px
 		z-index: 200
 		display: none
-		+s(dic-pic)
-		&:hover 
-			embed
-				display: block
-		embed
+		// +s(dic-pic)
+		// &:hover 
+		// 	object
+		// 		display: block
+		object
 			margin: -6px 0 0 -24px
-			display: none
+			// display: none
 		
 //header
 .header
@@ -395,3 +395,26 @@ input
 		overflow: visible !important
 		.jspVerticalBar
 			background: #A7A7A7 !important
+
+
+//option__right
+.option__right
+	.option__item
+		img
+			height: 208px
+			display: block
+.pager-block
+	margin-bottom: 28px
+.cycle-btn
+	padding: 0 10px 0 14px 
+	height: 35px
+	color: #313131 
+	font-size: 16px
+	vertical-align: middle
+	text-transform: uppercase 
+	font-family: 'Roboto Condensed', 'sans-serif'
+	background: none
+	&.cycle-pager-active
+		color: #fff
+		background: #B02D1B 
+.option__item
